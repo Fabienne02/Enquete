@@ -14,13 +14,11 @@ Ook de cookies waren niet aanwezig je hoeft niet in te loggen maar hiervoor is l
 [powerpoint](https://docs.google.com/presentation/d/1jdI4LM5jRP3cIGAI6dd2TB8Cj5_WkmqYBQT7UMKtM4o/edit?usp=sharing)
 
 # Enquete - minor web 🖍️
-<img src="https://github.com/Fabienne02/Quotes/blob/main/assets/Focus quote.jpg" width=530 >
+<img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/assets/banner.jpg" width=530 >
 
 # Introduction
 Geef jouw mening over de tot nu gegeven vakken van minor web, 
 en lees jouw antwoorden terug!
-
-<img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/assets/banner.jpg" height="700" alt="banner">
 
 ## Table of contents
   - [Table of contents](#table-of-contents)
