@@ -14,7 +14,7 @@ Ook de cookies waren niet aanwezig je hoeft niet in te loggen maar hiervoor is l
 [powerpoint](https://docs.google.com/presentation/d/1jdI4LM5jRP3cIGAI6dd2TB8Cj5_WkmqYBQT7UMKtM4o/edit?usp=sharing)
 
 # Enquete - minor web 🖍️
-<img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/assets/banner.jpg" width=530 >
+<img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/eindopdracht/assets/banner.jpg" width=530 >
 
 # Introduction
 Geef jouw mening over de tot nu gegeven vakken van minor web, 
@@ -70,7 +70,7 @@ npm install || npm start
 6. Open de de localhost:3002 in je browser
 
 ## Wireflow
-<img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/assets/Wireflow.png">
+<img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/eindopdracht/assets/Wireflow.png">
 
 ## Browsers
 Lees meer over de presentatie van deze web-app  in de [wiki](https://github.com/Fabienne02/PWA---Quotes/wiki)
