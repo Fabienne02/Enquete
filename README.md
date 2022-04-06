@@ -1,7 +1,6 @@
 # Opdracht 1 
 
-Opdracht 1 is te vinden onder het mapje docs 
-of via de repo link 
+Opdracht 1 is te vinden onder het mapje Opdracht1/docs
 
 # Opdracht 2
 
