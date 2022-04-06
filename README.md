@@ -39,7 +39,7 @@ en lees jouw antwoorden terug!
 **Deze enquete gaat over de vakken van de minor web**
 
 ## Gecodeerd met
-Deze enquete is gecodeerd in HTML, CSS en JS
+Deze enquete is gecodeerd in HTML, CSS en JS, serverside gerenderd met EJS en Node
 
 ## Features
 <ul>
@@ -73,22 +73,11 @@ npm install || npm start
 <img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/eindopdracht/assets/Wireflow.png">
 
 ## Browsers
-Lees meer over de presentatie van deze web-app  in de [wiki](https://github.com/Fabienne02/PWA---Quotes/wiki)
-- [Critical render path](https://github.com/Fabienne02/PWA---Quotes/wiki/Critical-render-path)
-- [Lighthouse](https://github.com/Fabienne02/PWA---Quotes/wiki/Lighthouse)
-- Font-display: swap
-- Compression 
-- js defer tag
-
-Hierbij heb ik ook geprobeerd een control header in te stellen, dit beïnvloede mijn snelheid negatief met 0,2-0,4 seconden dus heb ik deze weg gelaten.
 
 ## Testverslag
 
 ## Sources
-- [Code hulp bron](https://developer.mozilla.org/en-US/)
-- [Fetch in Node](https://dev.to/pratham82/using-fetch-api-in-node-js-with-weather-api-3a7d)
-- [PWA](https://vaadin.com/learn/tutorials/learn-pwa/turn-website-into-a-pwa)
-
+- [Can i use](https://caniuse.com/)
 
 ## Author
 De maker van deze WPA is: [*Fabienne van den Steen*](https://github.com/Fabienne02)
