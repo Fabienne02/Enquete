@@ -84,7 +84,8 @@ Enquete is getest op de volgende browsers:<br>
 ## Testverslag
 - Require: werkt niet op IOS --> Error pagina inladen in EJS
 <img src="https://github.com/Fabienne02/Enquete/blob/main/assets/ios-test1.jpg" width=530 >
-In deze code gebruiken we JS elementen zoals Var ipv let, en document.getElementById IPV queryselector ter ondersteuning. <br><br>
+In deze code gebruiken we JS elementen zoals Var ipv let, en document.getElementById IPV queryselector ter ondersteuning. <br>
+
 - Flex-box: Niet supported op oudere versies IE & opera --> Display: Inline-block;
 
 
