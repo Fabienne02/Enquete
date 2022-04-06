@@ -73,8 +73,21 @@ npm install || npm start
 <img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/eindopdracht/assets/Wireflow.png">
 
 ## Browsers
+Enquete is getest op de volgende browsers:<br>
+1 andriod browser, 1 IOS browser, 2 Desktop browsers, 1 niet chromium broswer<br>
+
+- Revolution andriod browser 
+- Chrome
+- Firefox
+- Opera mini
+- Safari
 
 ## Testverslag
+- Require: werkt niet op IOS --> Error pagina inladen in EJS
+<img src="https://github.com/Fabienne02/Enquete/blob/main/eindopdracht/assets/ios-test1.jpg" width=530 >
+In deze code gebruiken we JS elementen zoals Var ipv let, en document.getElementById IPV queryselector ter ondersteuning
+- Flex-box: Niet supported op oudere versies IE & opera --> Display: Inline-block;
+
 
 ## Sources
 - [Can i use](https://caniuse.com/)
