@@ -20,7 +20,7 @@ Ook de cookies waren niet aanwezig je hoeft niet in te loggen maar hiervoor is l
 Geef jouw mening over de tot nu gegeven vakken van minor web, 
 en lees jouw antwoorden terug!
 
-<img src="https://github.com/Fabienne02/Quotes/blob/main/assets/quotes.png" height="700" alt="banner">
+<img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/assets/banner.jpg" height="700" alt="banner">
 
 ## Table of contents
   - [Table of contents](#table-of-contents)
@@ -72,7 +72,7 @@ npm install || npm start
 6. Open de de localhost:3002 in je browser
 
 ## Wireflow
-<img src="https://github.com/Fabienne02/PWA---Quotes/blob/main/assets/activity-diagram.png">
+<img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/assets/Wireflow.png">
 
 ## Browsers
 Lees meer over de presentatie van deze web-app  in de [wiki](https://github.com/Fabienne02/PWA---Quotes/wiki)
