@@ -1,0 +1,169 @@
+/* Json parse
+can i use check verything */
+
+body {
+    font-family: Prompt, sans-serif;
+    background-color: #faefec;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-width: 20em;
+    color: #1d3249;
+}
+
+ul {
+    background-color: #f9e4e1;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    display: inline-block;
+    list-style-type: none;
+    padding: 1.5em;
+    border-radius: 25px;
+    width: 35vw;
+}
+
+li {
+    /* display: flex;
+    justify-content: space-around; */
+    display: inline-block;
+    padding: 0.5em;
+    margin-left: 0.1em;
+    border: 2px solid #1d3249;
+    border-radius: 50%;
+    width: 1.5em;
+    aspect-ratio: 1/1;
+    margin-right: 1em;
+}
+
+a {
+    cursor: pointer;
+    color: #1d3249;
+    text-decoration: none;
+}
+
+label {
+    font-weight: 800;
+    margin-right: 1em;
+}
+
+form {
+    overflow-x: auto;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+/* Dit kan wel flexbox van de core blijft usefull  */
+fieldset:not(:first-child) {
+    display: flex;
+    flex-direction: row;
+}
+
+fieldset:nth-of-type(1) {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+div:nth-of-type(1) input {
+    background-color: #ecd8e6;
+    border: none;
+    padding: 1em;
+}
+
+section:nth-of-type(1) {
+    background-color: #e1cdcb;
+    color: #df4239;
+}
+
+section:nth-of-type(2) {
+    background-color: #ecd8e6;
+    color: #729f7f;
+}
+
+section:nth-of-type(3) {
+    background-color: #253834;
+    color: #eebed9;
+}
+
+section:nth-of-type(4) {
+    background-color: #c0d9cc;
+    color: #064024;
+}
+
+legend {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-left: 1em;
+    /* display: flex;
+    flex-wrap: wrap; */
+    width: 75vw;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-weight: 100;
+}
+
+section:not(:first-child) div,
+h3 {
+    margin-left: 1em;
+}
+
+p {
+    font-size: 1.5em;
+    margin-left: 1em;
+}
+
+section {
+    padding: 2.5em;
+    border-radius: 50px;
+    width: 25em;
+    height: 29em;
+}
+
+fieldset section div:not(:first-child) {
+    display: inline-block;
+}
+
+fieldset section:nth-of-type(3) div:nth-of-type(1) {
+    width: 100%;
+    display: inline-block;
+}
+
+button {
+    background-color: #f9e4e1;
+    border-radius: 10px;
+    font-family: Prompt;
+    font-size: 1em;
+    padding: 20px;
+    border: none;
+    margin-left: 2em;
+    margin-top: 5em;
+    width: 15em;
+}
+
+/* NO SCRIPT  */
+noscript {
+    background-color: #DF4239;
+    color:#F9E4E1;
+    padding: 1em;
+    width: 100%;
+    border-radius: 0px 0px 25px 25px;
+    font-size: 0.8rem;
+}
