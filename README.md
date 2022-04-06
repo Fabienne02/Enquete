@@ -67,7 +67,7 @@ npm install || npm i
 ```
 npm install || npm start
 ```
-6. Open de de localhost:3002 in je browser
+6. Open de de localhost:3000 in je browser
 
 ## Wireflow
 <img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/eindopdracht/assets/Wireflow.png">
@@ -85,12 +85,13 @@ Enquete is getest op de volgende browsers:<br>
 ## Testverslag
 - Require: werkt niet op IOS --> Error pagina inladen in EJS
 <img src="https://github.com/Fabienne02/Enquete/blob/main/eindopdracht/assets/ios-test1.jpg" width=530 >
-In deze code gebruiken we JS elementen zoals Var ipv let, en document.getElementById IPV queryselector ter ondersteuning
+In deze code gebruiken we JS elementen zoals Var ipv let, en document.getElementById IPV queryselector ter ondersteuning. <br>
 - Flex-box: Niet supported op oudere versies IE & opera --> Display: Inline-block;
 
 
 ## Sources
 - [Can i use](https://caniuse.com/)
+- [Javascript form](https://stackoverflow.com/questions/17380661/form-using-javascript-make-field-required)
 
 ## Author
 De maker van deze WPA is: [*Fabienne van den Steen*](https://github.com/Fabienne02)
