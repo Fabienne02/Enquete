@@ -87,9 +87,10 @@ Enquete is getest op de volgende browsers:<br>
 In deze code gebruiken we JS elementen zoals Var ipv let, en document.getElementById IPV queryselector ter ondersteuning. <br>
 
 - Flex-box: Niet supported op oudere versies IE & opera --> Display: Inline-block;
-- EM: niet supported in eerste versies van Firefox, IE, Chrome en Safari --> Alles in %
+- EM: Niet supported in eerste versies van Firefox, IE, Chrome en Safari --> Alles in %
 - Padding: Niet supported in opera mini --> Hij blijft nog steeds functioneel dus geen maatregel
-- Border: Eerste versie opera, firefox en IE --> Hij blijft nog steeds functioneel dus geen maatregel
+- Border: Niet supported eerste versie opera, firefox en IE --> Hij blijft nog steeds functioneel dus geen maatregel
+- Min-width: Niet supported in android browsers en IE eerste versie ---> width in % aangeven
 
 
 ## Sources
