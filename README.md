@@ -71,6 +71,14 @@ npm install || npm start
 
 ## Wireflow
 <img src="https://github.com/Fabienne02/browser-technologies-2122/blob/main/assets/Wireflow.png">
+<br>
+ - functional/reliable laag <br>
+ De functional laag bestaat uit de core html, de css en js zijn uitgeschakeld.
+ <img src="https://github.com/Fabienne02/Enquete/blob/main/assets/html1.jpg" width=530 > <br>
+ - usable laag <br>
+ De usuable laag bestaat uit de laag met css zonder js. Hierbij zijn alle friendly user styling toegepast zoals grote knoppen, :hover en toepasselijke kleuren om het lezen vriendelijker te maken <br>
+ - pleasurable laag <br>
+ De pleaseruable laag is met CSS en JS hierbij zijn alle user friendly features ook in JS toegepast zoals weken die niet het zelfde mogen zijn of meer dan 26, een warning als je niet alles hebt ingevuld ook voor IOS ;) 
 
 ## Browsers
 Enquete is getest op de volgende browsers:<br>
