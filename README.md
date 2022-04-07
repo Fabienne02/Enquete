@@ -74,9 +74,9 @@ npm install || npm start
 <br>
  - functional/reliable laag <br>
  De functional laag bestaat uit de core html, de css en js zijn uitgeschakeld.
- <img src="https://github.com/Fabienne02/Enquete/blob/main/assets/html1.jpg" width=530 > <br>
+ <img src="https://github.com/Fabienne02/Enquete/blob/main/assets/html1.jpg" width=530 > <br><br>
  - usable laag <br>
- De usuable laag bestaat uit de laag met css zonder js. Hierbij zijn alle friendly user styling toegepast zoals grote knoppen, :hover en toepasselijke kleuren om het lezen vriendelijker te maken <br>
+ De usuable laag bestaat uit de laag met css zonder js. Hierbij zijn alle friendly user styling toegepast zoals grote knoppen, :hover en toepasselijke kleuren om het lezen vriendelijker te maken <br><br>
  - pleasurable laag <br>
  De pleaseruable laag is met CSS en JS hierbij zijn alle user friendly features ook in JS toegepast zoals weken die niet het zelfde mogen zijn of meer dan 26, een warning als je niet alles hebt ingevuld ook voor IOS ;) 
 
