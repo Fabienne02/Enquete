@@ -1,368 +1,791 @@
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Enquete minor web</title>
+    <title>Enquete minor web</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="/Icons/Favicon.png" />
-        <link href="/styles.css" rel="stylesheet" />
-    </head>
-    <header>
-        <noscript>Please turn on Javascript for better use</noscript>
-        <h1><b>Enquete</b></h1>
-        <h2>Minor Web</h2>
-        <ul>
-            <li><a href="#Wafs">1</a></li>
-            <li><a href="#css">2</a></li>
-            <li><a href="#pwa">3</a></li>
-            <li><a href="#bt">4</a></li>
-        </ul>
-    </header>
-    <body>
-        <form action="/answers" method="post" id="form">
-            <fieldset>
-                <div>
-                    <label for="name">Je naam*</label>
-                    <input type="text" name="name" id="name" placeholder="Naam" pattern="^\w+( \w+)*$" require"" aria-required="”true”"
-                    title="Vul jouw naam in" />
-                    <label for="studentnummer">studentnummer*</label>
-                    <input
-                        type="text"
-                        name="studentnummer"
-                        id="studentnummer"
-                        placeholder="500123456"
-                        pattern="[0-9]{9}"
-                        title="Vul jouw studentnummer in"
-                        required=""
-                    />
-                </div>
-            </fieldset>
-            <fieldset id="Wafs">
-                <legend>Webapps from scratch</legend>
-                <section>
-                    <h3><b>Docent - beoordeling</b></h3>
-                    <div>
-                        <input type="radio" value="Joost" name="wafsdocent" id="wafsdocent0" checked="" />
-                        <label for="wafsdocentjoost"> Joost </label>
-                        <input type="radio" value="Suus" name="wafsdocent" id="wafsdocent1" />
-                        <label for="wafsdocentkoop"> Koop </label>
-                    </div>
-                    <h3><b>Week</b></h3>
-                    <div>
-                        <label for="weekStart">Van week: </label>
-                        <input type="number" name="wafsweek" id="weekBegin" min="0" max="52" value="1" />
-                        <label for="weekEnd">tot week: </label>
-                        <input type="number" name="wafsweek" id="weekEind" min="0" max="52" value="3" />
-                    </div>
-                    <h3>Slide to the left for more</h3>
-                </section>
-                <section>
-                    <h3>Lesstof</h3>
-                    <div>
-                        <input type="radio" name="wafslesstof1" value="Easy peacy" id="wafslesstofradio0" />
-                        <label for="wafslesstofradio0">Easy peacy</label>
-                        <input type="radio" name="wafslesstof1" value="meh" id="wafslesstofradio1" checked="" />
-                        <label for="wafslesstofradio1">meh</label>
-                        <input type="radio" name="wafslesstof1" value="eh..." id="wafslesstofradio2" />
-                        <label for="wafslesstofradio2">eh...</label>
-                    </div>
-                    <h3>Uitleg</h3>
-                    <div>
-                        <input type="radio" name="wafslesstof2" value="Easy peacy" id="wafslesstofradio3" />
-                        <label for="wafslesstofradio3">Easy peacy</label>
-                        <input type="radio" name="wafslesstof2" value="meh" id="wafslesstofradio4" checked="" />
-                        <label for="wafslesstofradio4">meh</label>
-                        <input type="radio" name="wafslesstof2" value="eh..." id="wafslesstofradio5" />
-                        <label for="wafslesstofradio5">eh...</label>
-                    </div>
-                </section>
-                <section>
-                    <h3>Beoordeling</h3>
-                    <div>
-                        <input type="radio" name="wafsbeoordeling" value="0" id="wafsbeoordelingradio0" />
-                        <label for="wafsbeoordelingradio0">0</label>
-                        <input type="radio" name="wafsbeoordeling" value="1" id="wafsbeoordelingradio1" />
-                        <label for="wafsbeoordelingradio1">1</label>
-                        <input type="radio" name="wafsbeoordeling" value="2" id="wafsbeoordelingradio2" />
-                        <label for="wafsbeoordelingradio2">2</label>
-                        <input type="radio" name="wafsbeoordeling" value="3" id="wafsbeoordelingradio3" />
-                        <label for="wafsbeoordelingradio3">3</label>
-                        <input type="radio" name="wafsbeoordeling" value="4" id="wafsbeoordelingradio4" />
-                        <label for="wafsbeoordelingradio4">4</label>
-                        <input type="radio" name="wafsbeoordeling" value="5" id="wafsbeoordelingradio5" checked="" />
-                        <label for="wafsbeoordelingradio5">5</label>
-                        <input type="radio" name="wafsbeoordeling" value="6" id="wafsbeoordelingradio6" />
-                        <label for="wafsbeoordelingradio6">6</label>
-                        <input type="radio" name="wafsbeoordeling" value="7" id="wafsbeoordelingradio7" />
-                        <label for="wafsbeoordelingradio7">7</label>
-                        <input type="radio" name="wafsbeoordeling" value="8" id="wafsbeoordelingradio8" />
-                        <label for="wafsbeoordelingradio8">8</label>
-                        <input type="radio" name="wafsbeoordeling" value="9" id="wafsbeoordelingradio9" />
-                        <label for="wafsbeoordelingradio9">9</label>
-                        <input type="radio" name="wafsbeoordeling" value="10" id="wafsbeoordelingradio10" />
-                        <label for="wafsbeoordelingradio10">10</label>
-                    </div>
-                    <h3>Eigen inzichten*</h3>
-                    <div>
-                        <textarea
-                            name="wafsinzichten"
-                            id="wafsinzichten"
-                            cols="50"
-                            rows="10"
-                            placeholder="Inzichten"
-                            required=""
-                            aria-required="”true”"
-                            title="Vul jouw inzichten in"
-                        ></textarea>
-                    </div>
-                </section>
-            </fieldset>
-            <fieldset id="css">
-                <legend>CSS to the rescue</legend>
-                <section>
-                    <h3><b>Docent - beoordeling</b></h3>
-                    <div>
-                        <input type="radio" value="Sanne" name="cssdocent" id="cssdocent0" checked="" />
-                        <label for="cssdocentsanne"> Sanne </label>
-                        <input type="radio" value="Vasilis" name="cssdocent" id="cssdocent1" />
-                        <label for="cssdocentvasilis"> Vasilis </label>
-                    </div>
-                    <h3><b>Week</b></h3>
-                    <div>
-                        <label for="weekBegin">Van week: </label>
-                        <input type="number" name="cssweek" id="weekBegin" min="0" max="52" value="1" />
-                        <label for="weekEind">tot week: </label>
-                        <input type="number" name="cssweek" id="weekEind" min="0" max="52" value="3" />
-                    </div>
-                    <h3>Slide to the left for more</h3>
-                </section>
-                <section>
-                    <h3>Lesstof</h3>
-                    <div>
-                        <input type="radio" name="csslesstof1" value="Easy peacy" id="csslesstofradio0" />
-                        <label for="csslesstofradio0">Easy peacy</label>
-                        <input type="radio" name="csslesstof1" value="meh" id="csslesstofradio1" checked="" />
-                        <label for="csslesstofradio1">meh</label>
-                        <input type="radio" name="csslesstof1" value="eh..." id="csslesstofradio2" />
-                        <label for="csslesstofradio2">eh...</label>
-                    </div>
-                    <h3>Uitleg</h3>
-                    <div>
-                        <input type="radio" name="csslesstof2" value="Easy peacy" id="csslesstofradio3" />
-                        <label for="csslesstofradio3">Easy peacy</label>
-                        <input type="radio" name="csslesstof2" value="meh" id="csslesstofradio4" checked="" />
-                        <label for="csslesstofradio4">meh</label>
-                        <input type="radio" name="csslesstof2" value="eh..." id="csslesstofradio5" />
-                        <label for="csslesstofradio5">eh...</label>
-                    </div>
-                </section>
-                <section>
-                    <h3>Beoordeling</h3>
-                    <div>
-                        <input type="radio" name="cssbeoordeling" value="0" id="cssbeoordelingradio0" />
-                        <label for="cssbeoordelingradio0">0</label>
-                        <input type="radio" name="cssbeoordeling" value="1" id="cssbeoordelingradio1" />
-                        <label for="cssbeoordelingradio1">1</label>
-                        <input type="radio" name="cssbeoordeling" value="2" id="cssbeoordelingradio2" />
-                        <label for="cssbeoordelingradio2">2</label>
-                        <input type="radio" name="cssbeoordeling" value="3" id="cssbeoordelingradio3" />
-                        <label for="cssbeoordelingradio3">3</label>
-                        <input type="radio" name="cssbeoordeling" value="4" id="cssbeoordelingradio4" />
-                        <label for="cssbeoordelingradio4">4</label>
-                        <input type="radio" name="cssbeoordeling" value="5" id="cssbeoordelingradio5" checked="" />
-                        <label for="cssbeoordelingradio5">5</label>
-                        <input type="radio" name="cssbeoordeling" value="6" id="cssbeoordelingradio6" />
-                        <label for="cssbeoordelingradio6">6</label>
-                        <input type="radio" name="cssbeoordeling" value="7" id="cssbeoordelingradio7" />
-                        <label for="cssbeoordelingradio7">7</label>
-                        <input type="radio" name="cssbeoordeling" value="8" id="cssbeoordelingradio8" />
-                        <label for="cssbeoordelingradio8">8</label>
-                        <input type="radio" name="cssbeoordeling" value="9" id="cssbeoordelingradio9" />
-                        <label for="cssbeoordelingradio9">9</label>
-                        <input type="radio" name="cssbeoordeling" value="10" id="cssbeoordelingradio10" />
-                        <label for="cssbeoordelingradio10">10</label>
-                    </div>
-                    <h3>Eigen inzichten*</h3>
-                    <div>
-                        <textarea
-                            name="cssinzichten"
-                            id="cssinzichten"
-                            cols="50"
-                            rows="10"
-                            placeholder="Inzichten"
-                            required=""
-                            aria-required="”true”"
-                            title="Vul jouw inzichten in"
-                        ></textarea>
-                    </div>
-                </section>
-            </fieldset>
-            <fieldset id="pwa">
-                <legend>Progressive webapps</legend>
-                <section>
-                    <h3><b>Docent - beoordeling</b></h3>
-                    <div>
-                        <input type="radio" value="Declan" name="wpadocent" id="wpadocent0" checked="" />
-                        <label for="wpadocentdeclan"> Declan </label>
-                        <input type="radio" value="Justus" name="wpadocent" id="wpadocent1" />
-                        <label for="wpadocentjustus"> Justus </label>
-                    </div>
-                    <h3><b>Week</b></h3>
-                    <div>
-                        <label for="weekBegin">Van week: </label>
-                        <input type="number" name="wpaweek" id="weekBegin" min="0" max="52" value="1" />
-                        <label for="weekEind">tot week: </label>
-                        <input type="number" name="wpaweek" id="weekEind" min="0" max="52" value="3" />
-                    </div>
-                    <h3>Slide to the left for more</h3>
-                </section>
-                <section>
-                    <h3>Lesstof</h3>
-                    <div>
-                        <input type="radio" name="wpalesstof1" value="Easy peacy" id="wpalesstofradio0" />
-                        <label for="wpalesstofradio0">Easy peacy</label>
-                        <input type="radio" name="wpalesstof1" value="meh" id="wpalesstofradio1" checked="" />
-                        <label for="wpalesstofradio1">meh</label>
-                        <input type="radio" name="wpalesstof1" value="eh..." id="wpalesstofradio2" />
-                        <label for="wpalesstofradio2">eh...</label>
-                    </div>
-                    <h3>Uitleg</h3>
-                    <div>
-                        <input type="radio" name="wpalesstof2" value="Easy peacy" id="wpalesstofradio3" />
-                        <label for="wpalesstofradio3">Easy peacy</label>
-                        <input type="radio" name="wpalesstof2" value="meh" id="wpalesstofradio4" checked="" />
-                        <label for="wpalesstofradio4">meh</label>
-                        <input type="radio" name="csslesstof2" value="eh..." id="wpalesstofradio5" />
-                        <label for="wpalesstofradio5">eh...</label>
-                    </div>
-                </section>
-                <section>
-                    <h3>Beoordeling</h3>
-                    <div>
-                        <input type="radio" name="wpabeoordeling" value="0" id="wpabeoordelingradio0" />
-                        <label for="wpabeoordelingradio0">0</label>
-                        <input type="radio" name="wpabeoordeling" value="1" id="wpabeoordelingradio1" />
-                        <label for="wpabeoordelingradio1">1</label>
-                        <input type="radio" name="wpabeoordeling" value="2" id="wpabeoordelingradio2" />
-                        <label for="wpabeoordelingradio2">2</label>
-                        <input type="radio" name="wpabeoordeling" value="3" id="wpabeoordelingradio3" />
-                        <label for="wpabeoordelingradio3">3</label>
-                        <input type="radio" name="wpabeoordeling" value="4" id="wpabeoordelingradio4" />
-                        <label for="wpabeoordelingradio4">4</label>
-                        <input type="radio" name="wpabeoordeling" value="5" id="wpabeoordelingradio5" checked="" />
-                        <label for="wpabeoordelingradio5">5</label>
-                        <input type="radio" name="wpabeoordeling" value="6" id="wpabeoordelingradio6" />
-                        <label for="wpabeoordelingradio6">6</label>
-                        <input type="radio" name="wpabeoordeling" value="7" id="wpabeoordelingradio7" />
-                        <label for="wpabeoordelingradio7">7</label>
-                        <input type="radio" name="wpabeoordeling" value="8" id="wpabeoordelingradio8" />
-                        <label for="wpabeoordelingradio8">8</label>
-                        <input type="radio" name="wpabeoordeling" value="9" id="wpabeoordelingradio9" />
-                        <label for="wpabeoordelingradio9">9</label>
-                        <input type="radio" name="wpabeoordeling" value="10" id="wpabeoordelingradio10" />
-                        <label for="wpabeoordelingradio10">10</label>
-                    </div>
-                    <h3>Eigen inzichten*</h3>
-                    <div>
-                        <textarea
-                            name="wpainzichten"
-                            id="wpainzichten"
-                            cols="50"
-                            rows="10"
-                            placeholder="Inzichten"
-                            required=""
-                            aria-required="”true”"
-                            title="Vul jouw inzichten in"
-                        ></textarea>
-                    </div>
-                </section>
-            </fieldset>
-            <fieldset id="bt">
-                <legend>Browser technologies</legend>
-                <section>
-                    <h3><b>Docent - beoordeling</b></h3>
-                    <div>
-                        <input type="radio" value="Robert" name="btdocent" id="btdocent0" checked="" />
-                        <label for="btdocentrobert"> Robert </label>
-                        <input type="radio" value="Peter" name="btdocent" id="btdocent1" />
-                        <label for="btdocentjustus"> Peter </label>
-                    </div>
-                    <h3><b>Week</b></h3>
-                    <div>
-                        <label for="weekBegin">Van week: </label>
-                        <input type="number" name="btweek" id="weekBegin" min="0" max="52" value="1" />
-                        <label for="weekEind">tot week: </label>
-                        <input type="number" name="btweek" id="weekEind" min="0" max="52" value="3" />
-                    </div>
-                    <h3>Slide to the left for more</h3>
-                </section>
-                <section>
-                    <h3>Lesstof</h3>
-                    <div>
-                        <input type="radio" name="btlesstof1" value="Easy peacy" id="btlesstofradio0" />
-                        <label for="btlesstofradio0">Easy peacy</label>
-                        <input type="radio" name="btlesstof1" value="meh" id="btlesstofradio1" checked="" />
-                        <label for="btlesstofradio1">meh</label>
-                        <input type="radio" name="btlesstof1" value="eh..." id="btlesstofradio2" />
-                        <label for="btlesstofradio2">eh...</label>
-                    </div>
-                    <h3>Uitleg</h3>
-                    <div>
-                        <input type="radio" name="btlesstof2" value="Easy peacy" id="btlesstofradio3" />
-                        <label for="btlesstofradio3">Easy peacy</label>
-                        <input type="radio" name="btlesstof2" value="meh" id="btlesstofradio4" checked="" />
-                        <label for="btlesstofradio4">meh</label>
-                        <input type="radio" name="csslesstof2" value="eh..." id="btlesstofradio5" />
-                        <label for="btlesstofradio5">eh...</label>
-                    </div>
-                </section>
-                <section>
-                    <h3>Beoordeling</h3>
-                    <div>
-                        <input type="radio" name="btbeoordeling" value="0" id="btbeoordelingradio0" />
-                        <label for="btbeoordelingradio0">0</label>
-                        <input type="radio" name="btbeoordeling" value="1" id="btbeoordelingradio1" />
-                        <label for="btbeoordelingradio1">1</label>
-                        <input type="radio" name="btbeoordeling" value="2" id="btbeoordelingradio2" />
-                        <label for="btbeoordelingradio2">2</label>
-                        <input type="radio" name="btbeoordeling" value="3" id="btbeoordelingradio3" />
-                        <label for="btbeoordelingradio3">3</label>
-                        <input type="radio" name="btbeoordeling" value="4" id="btbeoordelingradio4" />
-                        <label for="btbeoordelingradio4">4</label>
-                        <input type="radio" name="btbeoordeling" value="5" id="btbeoordelingradio5" checked="" />
-                        <label for="btbeoordelingradio5">5</label>
-                        <input type="radio" name="btbeoordeling" value="6" id="btbeoordelingradio6" />
-                        <label for="btbeoordelingradio6">6</label>
-                        <input type="radio" name="btbeoordeling" value="7" id="btbeoordelingradio7" />
-                        <label for="btbeoordelingradio7">7</label>
-                        <input type="radio" name="btbeoordeling" value="8" id="btbeoordelingradio8" />
-                        <label for="btbeoordelingradio8">8</label>
-                        <input type="radio" name="btbeoordeling" value="9" id="btbeoordelingradio9" />
-                        <label for="btbeoordelingradio9">9</label>
-                        <input type="radio" name="btbeoordeling" value="10" id="btbeoordelingradio10" />
-                        <label for="btbeoordelingradio10">10</label>
-                    </div>
-                    <h3>Eigen inzichten*</h3>
-                    <div>
-                        <textarea
-                            name="btinzichten"
-                            id="btinzichten"
-                            cols="50"
-                            rows="10"
-                            placeholder="Inzichten"
-                            required=""
-                            aria-required="”true”"
-                            title="Vul jouw inzichten in"
-                        ></textarea>
-                    </div>
-                </section>
-            </fieldset>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/Icons/Favicon.png" />
+    <link href="/styles.css" rel="stylesheet" />
+  </head>
+  <header>
+    <noscript>Please turn on Javascript for better use</noscript>
+    <h1><b>Enquete</b></h1>
+    <h2>Minor Web</h2>
+    <ul>
+      <li><a href="#Wafs">1</a></li>
+      <li><a href="#css">2</a></li>
+      <li><a href="#pwa">3</a></li>
+      <li><a href="#bt">4</a></li>
+    </ul>
+  </header>
+  <body>
+    <form action="/answers" method="post" id="form">
+      <fieldset>
+        <div>
+          <label for="name">Je naam*</label>
+          <input type="text" name="name" id="name" placeholder="Naam"
+          pattern="^\w+( \w+)*$" require"" aria-required="”true”" title="Vul
+          jouw naam in" />
+          <label for="studentnummer">studentnummer*</label>
+          <input
+            type="text"
+            name="studentnummer"
+            id="studentnummer"
+            placeholder="500123456"
+            pattern="[0-9]{9}"
+            title="Vul jouw studentnummer in"
+            required=""
+          />
+        </div>
+      </fieldset>
+      <fieldset id="Wafs">
+        <legend>Webapps from scratch</legend>
+        <section>
+          <h3><b>Docent - beoordeling</b></h3>
+          <div>
+            <input
+              type="radio"
+              value="Joost"
+              name="wafsdocent"
+              id="wafsdocent0"
+              checked=""
+            />
+            <label for="wafsdocentjoost"> Joost </label>
+            <input
+              type="radio"
+              value="Suus"
+              name="wafsdocent"
+              id="wafsdocent1"
+            />
+            <label for="wafsdocentkoop"> Koop </label>
+          </div>
+          <h3><b>Week</b></h3>
+          <div>
+            <label for="weekStart">Van week: </label>
+            <input
+              type="number"
+              name="wafsweek"
+              id="weekBegin"
+              min="0"
+              max="26"
+              value="1"
+            />
+            <label for="weekEnd">tot week: </label>
+            <input
+              type="number"
+              name="wafsweek"
+              id="weekEind"
+              min="0"
+              max="26"
+              value="3"
+            />
+          </div>
+          <h3 class="slide">Slide for more</h3>
+        </section>
+        <section>
+          <h3>Lesstof</h3>
+          <div>
+            <input
+              type="radio"
+              name="wafslesstof1"
+              value="Easy peasy"
+              id="wafslesstofradio0"
+            />
+            <label for="wafslesstofradio0">Easy peasy</label>
+            <input
+              type="radio"
+              name="wafslesstof1"
+              value="meh"
+              id="wafslesstofradio1"
+              checked=""
+            />
+            <label for="wafslesstofradio1">meh</label>
+            <input
+              type="radio"
+              name="wafslesstof1"
+              value="eh..."
+              id="wafslesstofradio2"
+            />
+            <label for="wafslesstofradio2">eh...</label>
+          </div>
+          <h3>Uitleg</h3>
+          <div>
+            <input
+              type="radio"
+              name="wafslesstof2"
+              value="Easy peasy"
+              id="wafslesstofradio3"
+            />
+            <label for="wafslesstofradio3">Easy peasy</label>
+            <input
+              type="radio"
+              name="wafslesstof2"
+              value="meh"
+              id="wafslesstofradio4"
+              checked=""
+            />
+            <label for="wafslesstofradio4">meh</label>
+            <input
+              type="radio"
+              name="wafslesstof2"
+              value="eh..."
+              id="wafslesstofradio5"
+            />
+            <label for="wafslesstofradio5">eh...</label>
+          </div>
+        </section>
+        <section>
+          <h3>Beoordeling</h3>
+          <div>
+            <input
+              type="radio"
+              name="wafsbeoordeling"
+              value="1"
+              id="wafsbeoordelingradio1"
+            />
+            <label for="wafsbeoordelingradio1">1</label>
+            <input
+              type="radio"
+              name="wafsbeoordeling"
+              value="2"
+              id="wafsbeoordelingradio2"
+            />
+            <label for="wafsbeoordelingradio2">2</label>
+            <input
+              type="radio"
+              name="wafsbeoordeling"
+              value="3"
+              id="wafsbeoordelingradio3"
+            />
+            <label for="wafsbeoordelingradio3">3</label>
+            <input
+              type="radio"
+              name="wafsbeoordeling"
+              value="4"
+              id="wafsbeoordelingradio4"
+            />
+            <label for="wafsbeoordelingradio4">4</label>
+            <input
+              type="radio"
+              name="wafsbeoordeling"
+              value="5"
+              id="wafsbeoordelingradio5"
+              checked=""
+            />
+            <label for="wafsbeoordelingradio5">5</label>
+            <input
+              type="radio"
+              name="wafsbeoordeling"
+              value="6"
+              id="wafsbeoordelingradio6"
+            />
+            <label for="wafsbeoordelingradio6">6</label>
+            <input
+              type="radio"
+              name="wafsbeoordeling"
+              value="7"
+              id="wafsbeoordelingradio7"
+            />
+            <label for="wafsbeoordelingradio7">7</label>
+            <input
+              type="radio"
+              name="wafsbeoordeling"
+              value="8"
+              id="wafsbeoordelingradio8"
+            />
+            <label for="wafsbeoordelingradio8">8</label>
+            <input
+              type="radio"
+              name="wafsbeoordeling"
+              value="9"
+              id="wafsbeoordelingradio9"
+            />
+            <label for="wafsbeoordelingradio9">9</label>
+            <input
+              type="radio"
+              name="wafsbeoordeling"
+              value="10"
+              id="wafsbeoordelingradio10"
+            />
+            <label for="wafsbeoordelingradio10">10</label>
+          </div>
+          <h3>Eigen inzichten*</h3>
+          <div>
+            <textarea
+              name="wafsinzichten"
+              id="wafsinzichten"
+              cols="50"
+              rows="10"
+              placeholder="Inzichten"
+              required=""
+              aria-required="”true”"
+              title="Vul jouw inzichten in"
+            ></textarea>
+          </div>
+        </section>
+      </fieldset>
+      <fieldset id="css">
+        <legend>CSS to the rescue</legend>
+        <section>
+          <h3><b>Docent - beoordeling</b></h3>
+          <div>
+            <input
+              type="radio"
+              value="Sanne"
+              name="cssdocent"
+              id="cssdocent0"
+              checked=""
+            />
+            <label for="cssdocentsanne"> Sanne </label>
+            <input
+              type="radio"
+              value="Vasilis"
+              name="cssdocent"
+              id="cssdocent1"
+            />
+            <label for="cssdocentvasilis"> Vasilis </label>
+          </div>
+          <h3><b>Week</b></h3>
+          <div>
+            <label for="weekBegin">Van week: </label>
+            <input
+              type="number"
+              name="cssweek"
+              id="weekBegin"
+              min="0"
+              max="26"
+              value="1"
+            />
+            <label for="weekEind">tot week: </label>
+            <input
+              type="number"
+              name="cssweek"
+              id="weekEind"
+              min="0"
+              max="26"
+              value="3"
+            />
+          </div>
+          <h3 class="slide">Slide for more</h3>
+        </section>
+        <section>
+          <h3>Lesstof</h3>
+          <div>
+            <input
+              type="radio"
+              name="csslesstof1"
+              value="Easy peasy"
+              id="csslesstofradio0"
+            />
+            <label for="csslesstofradio0">Easy peasy</label>
+            <input
+              type="radio"
+              name="csslesstof1"
+              value="meh"
+              id="csslesstofradio1"
+              checked=""
+            />
+            <label for="csslesstofradio1">meh</label>
+            <input
+              type="radio"
+              name="csslesstof1"
+              value="eh..."
+              id="csslesstofradio2"
+            />
+            <label for="csslesstofradio2">eh...</label>
+          </div>
+          <h3>Uitleg</h3>
+          <div>
+            <input
+              type="radio"
+              name="csslesstof2"
+              value="Easy peasy"
+              id="csslesstofradio3"
+            />
+            <label for="csslesstofradio3">Easy peasy</label>
+            <input
+              type="radio"
+              name="csslesstof2"
+              value="meh"
+              id="csslesstofradio4"
+              checked=""
+            />
+            <label for="csslesstofradio4">meh</label>
+            <input
+              type="radio"
+              name="csslesstof2"
+              value="eh..."
+              id="csslesstofradio5"
+            />
+            <label for="csslesstofradio5">eh...</label>
+          </div>
+        </section>
+        <section>
+          <h3>Beoordeling</h3>
+          <div>
+            <input
+              type="radio"
+              name="cssbeoordeling"
+              value="1"
+              id="cssbeoordelingradio1"
+            />
+            <label for="cssbeoordelingradio1">1</label>
+            <input
+              type="radio"
+              name="cssbeoordeling"
+              value="2"
+              id="cssbeoordelingradio2"
+            />
+            <label for="cssbeoordelingradio2">2</label>
+            <input
+              type="radio"
+              name="cssbeoordeling"
+              value="3"
+              id="cssbeoordelingradio3"
+            />
+            <label for="cssbeoordelingradio3">3</label>
+            <input
+              type="radio"
+              name="cssbeoordeling"
+              value="4"
+              id="cssbeoordelingradio4"
+            />
+            <label for="cssbeoordelingradio4">4</label>
+            <input
+              type="radio"
+              name="cssbeoordeling"
+              value="5"
+              id="cssbeoordelingradio5"
+              checked=""
+            />
+            <label for="cssbeoordelingradio5">5</label>
+            <input
+              type="radio"
+              name="cssbeoordeling"
+              value="6"
+              id="cssbeoordelingradio6"
+            />
+            <label for="cssbeoordelingradio6">6</label>
+            <input
+              type="radio"
+              name="cssbeoordeling"
+              value="7"
+              id="cssbeoordelingradio7"
+            />
+            <label for="cssbeoordelingradio7">7</label>
+            <input
+              type="radio"
+              name="cssbeoordeling"
+              value="8"
+              id="cssbeoordelingradio8"
+            />
+            <label for="cssbeoordelingradio8">8</label>
+            <input
+              type="radio"
+              name="cssbeoordeling"
+              value="9"
+              id="cssbeoordelingradio9"
+            />
+            <label for="cssbeoordelingradio9">9</label>
+            <input
+              type="radio"
+              name="cssbeoordeling"
+              value="10"
+              id="cssbeoordelingradio10"
+            />
+            <label for="cssbeoordelingradio10">10</label>
+          </div>
+          <h3>Eigen inzichten*</h3>
+          <div>
+            <textarea
+              name="cssinzichten"
+              id="cssinzichten"
+              cols="50"
+              rows="10"
+              placeholder="Inzichten"
+              required=""
+              aria-required="”true”"
+              title="Vul jouw inzichten in"
+            ></textarea>
+          </div>
+        </section>
+      </fieldset>
+      <fieldset id="pwa">
+        <legend>Progressive webapps</legend>
+        <section>
+          <h3><b>Docent - beoordeling</b></h3>
+          <div>
+            <input
+              type="radio"
+              value="Declan"
+              name="wpadocent"
+              id="wpadocent0"
+              checked=""
+            />
+            <label for="wpadocentdeclan"> Declan </label>
+            <input
+              type="radio"
+              value="Justus"
+              name="wpadocent"
+              id="wpadocent1"
+            />
+            <label for="wpadocentjustus"> Justus </label>
+          </div>
+          <h3><b>Week</b></h3>
+          <div>
+            <label for="weekBegin">Van week: </label>
+            <input
+              type="number"
+              name="wpaweek"
+              id="weekBegin"
+              min="0"
+              max="26"
+              value="1"
+            />
+            <label for="weekEind">tot week: </label>
+            <input
+              type="number"
+              name="wpaweek"
+              id="weekEind"
+              min="0"
+              max="26"
+              value="3"
+            />
+          </div>
+          <h3 class="slide">Slide for more</h3>
+        </section>
+        <section>
+          <h3>Lesstof</h3>
+          <div>
+            <input
+              type="radio"
+              name="wpalesstof1"
+              value="Easy peasy"
+              id="wpalesstofradio0"
+            />
+            <label for="wpalesstofradio0">Easy peasy</label>
+            <input
+              type="radio"
+              name="wpalesstof1"
+              value="meh"
+              id="wpalesstofradio1"
+              checked=""
+            />
+            <label for="wpalesstofradio1">meh</label>
+            <input
+              type="radio"
+              name="wpalesstof1"
+              value="eh..."
+              id="wpalesstofradio2"
+            />
+            <label for="wpalesstofradio2">eh...</label>
+          </div>
+          <h3>Uitleg</h3>
+          <div>
+            <input
+              type="radio"
+              name="wpalesstof2"
+              value="Easy peasy"
+              id="wpalesstofradio3"
+            />
+            <label for="wpalesstofradio3">Easy peasy</label>
+            <input
+              type="radio"
+              name="wpalesstof2"
+              value="meh"
+              id="wpalesstofradio4"
+              checked=""
+            />
+            <label for="wpalesstofradio4">meh</label>
+            <input
+              type="radio"
+              name="csslesstof2"
+              value="eh..."
+              id="wpalesstofradio5"
+            />
+            <label for="wpalesstofradio5">eh...</label>
+          </div>
+        </section>
+        <section>
+          <h3>Beoordeling</h3>
+          <div>
+            <input
+              type="radio"
+              name="wpabeoordeling"
+              value="1"
+              id="wpabeoordelingradio1"
+            />
+            <label for="wpabeoordelingradio1">1</label>
+            <input
+              type="radio"
+              name="wpabeoordeling"
+              value="2"
+              id="wpabeoordelingradio2"
+            />
+            <label for="wpabeoordelingradio2">2</label>
+            <input
+              type="radio"
+              name="wpabeoordeling"
+              value="3"
+              id="wpabeoordelingradio3"
+            />
+            <label for="wpabeoordelingradio3">3</label>
+            <input
+              type="radio"
+              name="wpabeoordeling"
+              value="4"
+              id="wpabeoordelingradio4"
+            />
+            <label for="wpabeoordelingradio4">4</label>
+            <input
+              type="radio"
+              name="wpabeoordeling"
+              value="5"
+              id="wpabeoordelingradio5"
+              checked=""
+            />
+            <label for="wpabeoordelingradio5">5</label>
+            <input
+              type="radio"
+              name="wpabeoordeling"
+              value="6"
+              id="wpabeoordelingradio6"
+            />
+            <label for="wpabeoordelingradio6">6</label>
+            <input
+              type="radio"
+              name="wpabeoordeling"
+              value="7"
+              id="wpabeoordelingradio7"
+            />
+            <label for="wpabeoordelingradio7">7</label>
+            <input
+              type="radio"
+              name="wpabeoordeling"
+              value="8"
+              id="wpabeoordelingradio8"
+            />
+            <label for="wpabeoordelingradio8">8</label>
+            <input
+              type="radio"
+              name="wpabeoordeling"
+              value="9"
+              id="wpabeoordelingradio9"
+            />
+            <label for="wpabeoordelingradio9">9</label>
+            <input
+              type="radio"
+              name="wpabeoordeling"
+              value="10"
+              id="wpabeoordelingradio10"
+            />
+            <label for="wpabeoordelingradio10">10</label>
+          </div>
+          <h3>Eigen inzichten*</h3>
+          <div>
+            <textarea
+              name="wpainzichten"
+              id="wpainzichten"
+              cols="50"
+              rows="10"
+              placeholder="Inzichten"
+              required=""
+              aria-required="”true”"
+              title="Vul jouw inzichten in"
+            ></textarea>
+          </div>
+        </section>
+      </fieldset>
+      <fieldset id="bt">
+        <legend>Browser technologies</legend>
+        <section>
+          <h3><b>Docent - beoordeling</b></h3>
+          <div>
+            <input
+              type="radio"
+              value="Robert"
+              name="btdocent"
+              id="btdocent0"
+              checked=""
+            />
+            <label for="btdocentrobert"> Robert </label>
+            <input type="radio" value="Peter" name="btdocent" id="btdocent1" />
+            <label for="btdocentjustus"> Peter </label>
+          </div>
+          <h3><b>Week</b></h3>
+          <div>
+            <label for="weekBegin">Van week: </label>
+            <input
+              type="number"
+              name="btweek"
+              id="weekBegin"
+              min="0"
+              max="26"
+              value="1"
+            />
+            <label for="weekEind">tot week: </label>
+            <input
+              type="number"
+              name="btweek"
+              id="weekEind"
+              min="0"
+              max="26"
+              value="3"
+            />
+          </div>
+          <h3 class="slide">Slide for more</h3>
+        </section>
+        <section>
+          <h3>Lesstof</h3>
+          <div>
+            <input
+              type="radio"
+              name="btlesstof1"
+              value="Easy peasy"
+              id="btlesstofradio0"
+            />
+            <label for="btlesstofradio0">Easy peasy</label>
+            <input
+              type="radio"
+              name="btlesstof1"
+              value="meh"
+              id="btlesstofradio1"
+              checked=""
+            />
+            <label for="btlesstofradio1">meh</label>
+            <input
+              type="radio"
+              name="btlesstof1"
+              value="eh..."
+              id="btlesstofradio2"
+            />
+            <label for="btlesstofradio2">eh...</label>
+          </div>
+          <h3>Uitleg</h3>
+          <div>
+            <input
+              type="radio"
+              name="btlesstof2"
+              value="Easy peasy"
+              id="btlesstofradio3"
+            />
+            <label for="btlesstofradio3">Easy peasy</label>
+            <input
+              type="radio"
+              name="btlesstof2"
+              value="meh"
+              id="btlesstofradio4"
+              checked=""
+            />
+            <label for="btlesstofradio4">meh</label>
+            <input
+              type="radio"
+              name="csslesstof2"
+              value="eh..."
+              id="btlesstofradio5"
+            />
+            <label for="btlesstofradio5">eh...</label>
+          </div>
+        </section>
+        <section>
+          <h3>Beoordeling</h3>
+          <div>
+            <input
+              type="radio"
+              name="btbeoordeling"
+              value="1"
+              id="btbeoordelingradio1"
+            />
+            <label for="btbeoordelingradio1">1</label>
+            <input
+              type="radio"
+              name="btbeoordeling"
+              value="2"
+              id="btbeoordelingradio2"
+            />
+            <label for="btbeoordelingradio2">2</label>
+            <input
+              type="radio"
+              name="btbeoordeling"
+              value="3"
+              id="btbeoordelingradio3"
+            />
+            <label for="btbeoordelingradio3">3</label>
+            <input
+              type="radio"
+              name="btbeoordeling"
+              value="4"
+              id="btbeoordelingradio4"
+            />
+            <label for="btbeoordelingradio4">4</label>
+            <input
+              type="radio"
+              name="btbeoordeling"
+              value="5"
+              id="btbeoordelingradio5"
+              checked=""
+            />
+            <label for="btbeoordelingradio5">5</label>
+            <input
+              type="radio"
+              name="btbeoordeling"
+              value="6"
+              id="btbeoordelingradio6"
+            />
+            <label for="btbeoordelingradio6">6</label>
+            <input
+              type="radio"
+              name="btbeoordeling"
+              value="7"
+              id="btbeoordelingradio7"
+            />
+            <label for="btbeoordelingradio7">7</label>
+            <input
+              type="radio"
+              name="btbeoordeling"
+              value="8"
+              id="btbeoordelingradio8"
+            />
+            <label for="btbeoordelingradio8">8</label>
+            <input
+              type="radio"
+              name="btbeoordeling"
+              value="9"
+              id="btbeoordelingradio9"
+            />
+            <label for="btbeoordelingradio9">9</label>
+            <input
+              type="radio"
+              name="btbeoordeling"
+              value="10"
+              id="btbeoordelingradio10"
+            />
+            <label for="btbeoordelingradio10">10</label>
+          </div>
+          <h3>Eigen inzichten*</h3>
+          <div>
+            <textarea
+              name="btinzichten"
+              id="btinzichten"
+              cols="50"
+              rows="10"
+              placeholder="Inzichten"
+              required=""
+              aria-required="”true”"
+              title="Vul jouw inzichten in"
+            ></textarea>
+          </div>
+        </section>
+      </fieldset>
 
-            <button type="submit" id="submit">Submit</button>
-        </form>
-        <script src="/app.js"></script>
-    </body>
-    <footer></footer>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <script src="/app.js"></script>
+  </body>
+  <footer></footer>
 </html>
