@@ -94,10 +94,11 @@ In deze code gebruiken we JS elementen zoals Var ipv let, en document.getElement
 <br>
 Voor de rest werden alle elementen goed ondersteund
 <br>
-# javascript 
+
+## javascript <br>
 De javascript bestaat uit server-side en client-side. Hierbij blijft de server-side werken ondanks de JS word uitgezet.
 De client-side desondanks niet, dit script bestaat enkel uit een require back-up script voor IOS.
-Wanneer de gebruiker JS uit heeft staan krijg de gebruiker dit te zien door middel van een <noscript> tag:
+Wanneer de gebruiker JS uit heeft staan krijg de gebruiker dit te zien door middel van een <noscript> tag:<br>
 <img src="https://github.com/Fabienne02/Enquete/blob/main/assets/noscript.jpg" width=530 >
  
 
