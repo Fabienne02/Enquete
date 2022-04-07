@@ -91,6 +91,15 @@ In deze code gebruiken we JS elementen zoals Var ipv let, en document.getElement
 - Padding: Niet supported in opera mini --> Hij blijft nog steeds functioneel dus geen maatregel
 - Border: Niet supported eerste versie opera, firefox en IE --> Hij blijft nog steeds functioneel dus geen maatregel
 - Min-width: Niet supported in android browsers en IE eerste versie ---> width in % aangeven, Hij blijft nog steeds functioneel dus geen maatregel
+<br>
+Voor de rest werden alle elementen goed ondersteund
+<br>
+# javascript 
+De javascript bestaat uit server-side en client-side. Hierbij blijft de server-side werken ondanks de JS word uitgezet.
+De client-side desondanks niet, dit script bestaat enkel uit een require back-up script voor IOS.
+Wanneer de gebruiker JS uit heeft staan krijg de gebruiker dit te zien door middel van een <noscript> tag:
+<img src="https://github.com/Fabienne02/Enquete/blob/main/assets/noscript.jpg" width=530 >
+ 
 
 ## Lighthouse
 Met aandacht op het kleurcontrast, leesbaarheidsregels en feedback voor de user:
