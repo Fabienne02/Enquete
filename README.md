@@ -99,8 +99,13 @@ Voor de rest werden alle elementen goed ondersteund
 ## javascript <br>
 De javascript bestaat uit server-side en client-side. Hierbij blijft de server-side werken ondanks de JS word uitgezet.
 De client-side desondanks niet, dit script bestaat enkel uit een require back-up script voor IOS.
+En een script waarbij je niet dezelfde week kunt invullen of een week hoger dan 26.
 Wanneer de gebruiker JS uit heeft staan krijg de gebruiker dit te zien door middel van een <noscript> tag:<br>
 <img src="https://github.com/Fabienne02/Enquete/blob/main/assets/noscript.jpg" width=530 >
+<img src="https://github.com/Fabienne02/Enquete/blob/main/assets/js2.jpg" width=530 >
+  
+
+
  
 
 ## Lighthouse
