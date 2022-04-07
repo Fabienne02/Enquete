@@ -113,7 +113,7 @@ Met aandacht op het kleurcontrast, leesbaarheidsregels en feedback voor de user:
 - [Javascript form](https://stackoverflow.com/questions/17380661/form-using-javascript-make-field-required)
 
 ## Author
-De maker van deze WPA is: [*Fabienne van den Steen*](https://github.com/Fabienne02)
+De maker van deze eqnuete is: [*Fabienne van den Steen*](https://github.com/Fabienne02)
 
 ## License 
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)]()
