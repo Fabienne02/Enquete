@@ -30,6 +30,7 @@ en lees jouw antwoorden terug!
   - [Wireflow](#wireflow)
   - [Browsers](#broswers)
   - [Testverslag](#testverslag)
+  - [Lighthouse](#lighthouse)
   - [Sources](#sources)
   - [Author](#author)
   - [License](#license)
@@ -87,10 +88,14 @@ Enquete is getest op de volgende browsers:<br>
 In deze code gebruiken we JS elementen zoals Var ipv let, en document.getElementById IPV queryselector ter ondersteuning. <br>
 
 - Flex-box: Niet supported op oudere versies IE & opera --> Display: Inline-block;
-- EM: Niet supported in eerste versies van Firefox, IE, Chrome en Safari --> Alles in %
 - Padding: Niet supported in opera mini --> Hij blijft nog steeds functioneel dus geen maatregel
 - Border: Niet supported eerste versie opera, firefox en IE --> Hij blijft nog steeds functioneel dus geen maatregel
-- Min-width: Niet supported in android browsers en IE eerste versie ---> width in % aangeven
+- Min-width: Niet supported in android browsers en IE eerste versie ---> width in % aangeven, Hij blijft nog steeds functioneel dus geen maatregel
+
+## Lighthouse
+Met aandacht op het kleurcontrast, leesbaarheidsregels en feedback voor de user:
+<img src="https://github.com/Fabienne02/Enquete/blob/main/assets/lighthouse1.jpg" width=530 >
+<img src="https://github.com/Fabienne02/Enquete/blob/main/assets/lighthouse2.jpg" width=530 >
 
 
 ## Sources
