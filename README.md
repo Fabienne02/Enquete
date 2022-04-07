@@ -28,7 +28,7 @@ en lees jouw antwoorden terug!
   - [Wishlist](#wishlist)
   - [Installing](#installing)
   - [Wireflow](#wireflow)
-  - [Browsers](#broswers)
+  - [Browsers](#browsers)
   - [Testverslag](#testverslag)
   - [Lighthouse](#lighthouse)
   - [Sources](#sources)
@@ -91,6 +91,7 @@ In deze code gebruiken we JS elementen zoals Var ipv let, en document.getElement
 - Padding: Niet supported in opera mini --> Hij blijft nog steeds functioneel dus geen maatregel
 - Border: Niet supported eerste versie opera, firefox en IE --> Hij blijft nog steeds functioneel dus geen maatregel
 - Min-width: Niet supported in android browsers en IE eerste versie ---> width in % aangeven, Hij blijft nog steeds functioneel dus geen maatregel
+- @keyframes: Niet supported in oudste versie van IE, Friefox, Safari, Opera ---> Hij blijft nog steeds functioneel dus geen maatregel
 <br>
 Voor de rest werden alle elementen goed ondersteund
 <br>
@@ -104,6 +105,7 @@ Wanneer de gebruiker JS uit heeft staan krijg de gebruiker dit te zien door midd
 
 ## Lighthouse
 Met aandacht op het kleurcontrast, leesbaarheidsregels en feedback voor de user:
+Hierbij heb ik voor user vriendelijkheid ook de radio buttons groter gemaakt zodat het toegankelijker is ondanks de scherm grote
 <img src="https://github.com/Fabienne02/Enquete/blob/main/assets/lighthouse1.jpg" width=530 >
 <img src="https://github.com/Fabienne02/Enquete/blob/main/assets/lighthouse2.jpg" width=530 >
 
